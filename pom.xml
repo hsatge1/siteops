@@ -23,7 +23,7 @@
                         </goals>
                         <configuration>
                             <!-- Ici vous pouvez configurer des scripts à exécuter -->
-                            <executable>./script.sh</executable>
+                            <executable>/src</executable>
                         </configuration>
                     </execution>
                 </executions>
