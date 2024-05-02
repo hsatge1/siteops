@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+    <meta charset="UTF-8">
+
+    <title>Onboarding Lucca</title>
+     <!-- Assurez-vous de définir les styles CSS convenablement pour que le logo et le layout soient bien affichés -->
+  <style>
+
+body, html {
+     height: 80%;
+     margin: 30;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   }
+   header, section, footer {
+     width: 80%; /* Vous pouvez ajuster la largeur selon vos préférences */
+     max-width: 1000px; /* Ou une largeur maximale spécifique */
+     margin: 20px auto; /* Centrage horizontal */
+   }
+
+    #logo {
+      display: flex; /* Pour aligner le logo avec le lien */
+      align-items: center; /* Centrer verticalement */
+      /* Plus de styles peuvent être nécessaires dépendant de vos besoins */
+    }
+
+    #logo img {
+      height: 200px; /* Ou la taille que vous désirez pour le logo */
+      width: auto;
+      margin-right: 0px; /* Ajoutez un peu d'espace entre le logo et le texte si nécessaire */
+    }
+
+    /* Ajout de styles pour les champs de formulaire */
+    
+    button {
+      display: inline-block;
+      padding: 10px 20px; /* Ajustez le padding si nécessaire */
+      margin-top: 10px; /* Espacement au-dessus du bouton */
+      cursor: pointer;
+      /* Ajoutez ici les autres styles pour votre bouton si nécessaire */
+    }
+
+  </style>
+
+   </head>
+   <body>
+    <header>
+     <nav>
+        <ul>
+            <li id="logo">
+                <img src="C:\Users\hsatge\Documents\onboarding-main\lucca-logo.png" alt="Logo de l'entreprise">
+        </li>
+            <li id="logo"><a href="#">Nous contacter</a></li>
+        </ul>
+     </nav>
+     <div id="imagePrincipale">
+        <h1>Onboarding</h1>
+        <div id="premierTrait"></div>
+     </div>
+    </header>
+    <section id="presentation">
+        <div id="textIntro">
+            <p>Bienvenue chez Lucca, pour faire en sorte de vous accueillir dans les meilleurs conditions
+                veuillez suivre les étapes ci dessous. Remplir les cases suivantes et indiquer votre poste.
+                Vous aurez ensuite le choix du matériel selon les critères précedemment indiqués
+            </p>
+              <!-- Ajout des champs de saisie pour le prénom et le nom -->
+ 
+
+            <!-- Ajout de la liste déroulante pour les intitulés de poste -->
+            <div>
+                <label for="poste">Votre poste:</label>
+                <select id="poste" name="poste" required>
+                    <option value="">-- Veuillez choisir un poste --</option>
+                    <option value="developpeur">Développeur</option>
+                    <option value="chef_projet">Product manager</option>
+                    <option value="consultant">Consultant</option>
+                    <option value="sales">Sales</option>
+                    <option value="finance">Finance comptabilité</option>
+                    <option value="rh">RH</option>
+                    <option value="studio">Studio Marketing</option>
+                    <option value="chef">Chef de produit</option>
+                    <option value="manager">Manager</option>
+                    <!-- Ajoutez d'autres options de poste ici -->
+                </select>
+                <form id="onboardingForm">
+                    <!-- Champs prénom et nom ici -->
+                    <!-- Liste déroulante pour les intitulés de poste ici -->
+                    <!-- Bouton de validation -->
+                    <div>
+                      <button type="submit">Valider</button>
+                    </div>
+                    </form>
+                    <script>
+                      document.getElementById('onboardingForm').addEventListener('submit', function(event) {
+                          // Empêcher le formulaire d'être soumis normalement
+                          event.preventDefault();
+                        
+                          // Obtenir la valeur du poste sélectionné
+                          var poste = document.getElementById('poste').value;
+                      
+                          // Utilisez une instruction switch pour gérer différentes pages de redirection
+                          switch (poste) {
+                              case 'developpeur':
+                                  window.location.href = 'formulairedev.html';
+                                  break;
+                              case 'chef_projet':
+                                  window.location.href = 'formulairemac.html';
+                                  break;
+                              case 'consultant':
+                                  window.location.href = 'formulaireautre.html';
+                                  break;
+                              case 'sales':
+                                  window.location.href = 'formulaireautre.html';
+                                  break;
+                              case 'finance':
+                                  window.location.href = 'formulaireautre.html';
+                                  break;
+                              case 'rh':
+                                  window.location.href = 'formulaireautre.html';
+                                  break;
+                              case 'studio':
+                                  window.location.href = 'formulairemac.html';
+                                  break;
+                              case 'chef':
+                                  window.location.href = 'formulairemac.html';
+                                  break;
+                              case 'manager':
+                                  window.location.href = 'formulairemac.html';
+                                  break;
+                              // Continuez avec les autres options comme illustré ci-dessus
+                              default:
+                                  alert('Veuillez sélectionner un poste.');
+                                  break;
+                          }
+                      });
+                  </script>    
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+   </body>
+</html>

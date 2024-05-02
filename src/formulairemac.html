@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <style>
+
+        #logo img {
+      height: 200px; /* Ou la taille que vous désirez pour le logo */
+      width: auto;
+      margin-right: 0px; /* Ajoutez un peu d'espace entre le logo et le texte si nécessaire */
+    }
+
+    button {
+      display: inline-block;
+      padding: 10px 20px; /* Ajustez le padding si nécessaire */
+      margin-top: 10px; /* Espacement au-dessus du bouton */
+      cursor: pointer;
+      /* Ajoutez ici les autres styles pour votre bouton si nécessaire */
+    }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de choix de matériel informatique</title>
+</head>
+<body>
+            <li id="logo">
+                <img src="C:\Users\hsatg\Desktop\Site onboarding\lucca-logo.png" alt="Logo de l'entreprise"> </li>
+          
+
+     <div id="imagePrincipale">
+
+    <h1>Choix du matériel informatique</h1>
+
+  
+
+    <form action="traitement_du_formulaire.php" method="post">
+
+        <div>
+            <label for="prenom">Nom Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+        
+        <h2>Type de PC</h2>
+        <label for="pc-mac">Mac</label>
+        <input type="radio" id="pc-mac" name="type_pc" value="mac" required>
+        
+        <label for="pc-windows">PC Windows</label>
+        <input type="radio" id="pc-windows" name="type_pc" value="windows" required>
+
+        <h2>Type de clavier</h2>
+        <select name="type_clavier" required>
+            <option value="">--Sélectionnez un type de clavier--</option>
+            <option value="fr">Français (FR)</option>
+            <option value="ch">Suisse (CH)</option>
+            <option value="es">Espagnol (ES)</option>
+            <option value="us">Anglais US (US)</option>
+        </select>
+
+        <h2>Type de souris</h2>
+        <label for="souris-ergo">Ergonomique</label>
+        <input type="radio" id="souris-ergo" name="type_souris" value="ergo" required>
+        
+        <label for="souris-classique">Classique</label>
+        <input type="radio" id="souris-classique" name="type_souris" value="classique" required>
+
+        <h2>Accessoires</h2>
+        <label for="accessoire-sac-dos">Sac à dos</label>
+        <input type="radio" id="accessoire-sac-dos" name="accessoire[]" value="sac_dos" required>
+        
+        <label for="accessoire-sacoche">Sacoche</label>
+        <input type="radio" id="accessoire-sacoche" name="accessoire[]" value="sacoche" required>
+
+        
+        <div>
+            <button type="submit">Valider votre choix</button>
+        </div>
+    </form>
+
+</body>
+</html>
