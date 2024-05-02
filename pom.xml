@@ -22,8 +22,6 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <!-- Ici vous pouvez configurer des scripts à exécuter -->
-                            <executable>script.sh</executable>
                         </configuration>
                     </execution>
                 </executions>
