@@ -16,16 +16,7 @@
                 <version>1.6.0</version>
                 <executions>
                     <execution>
-                        <id>exec-script</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                        <configuration>
-                            <!-- Ici vous pouvez configurer des scripts à exécuter -->
-                            <executable>/src</executable>
-                        </configuration>
-                    </execution>
+                                        </execution>
                 </executions>
             </plugin>
         </plugins>
