@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
     <style>
+        
+body, html {
+     height: 80%;
+     margin: 30;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   }
+   header, section, footer {
+     width: 80%; /* Vous pouvez ajuster la largeur selon vos préférences */
+     max-width: 1000px; /* Ou une largeur maximale spécifique */
+     margin: 20px auto; /* Centrage horizontal */
+   }
 
-        #logo img {
+    #logo {
+      display: flex; /* Pour aligner le logo avec le lien */
+      align-items: center; /* Centrer verticalement */
+      /* Plus de styles peuvent être nécessaires dépendant de vos besoins */
+    }
+
+    #logo img {
       height: 200px; /* Ou la taille que vous désirez pour le logo */
       width: auto;
       margin-right: 0px; /* Ajoutez un peu d'espace entre le logo et le texte si nécessaire */
     }
 
+
     button {
       display: inline-block;
       padding: 10px 20px; /* Ajustez le padding si nécessaire */
-      margin-top: 10px; /* Espacement au-dessus du bouton */
+      margin-top: 20px; /* Espacement au-dessus du bouton */
       cursor: pointer;
       /* Ajoutez ici les autres styles pour votre bouton si nécessaire */
     }
