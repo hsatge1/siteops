@@ -7,6 +7,6 @@ COPY . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html
 
 # Exposer le port 80
-EXPOSE 8080
+
 
 # Si vous avez besoin d'autres commandes pour configurer votre PHP ou Apache, ajoutez-les ici
