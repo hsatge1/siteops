@@ -21,9 +21,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                "Accessoires: " . $accessoire;
 
     // Pour envoyer un e-mail HTML, l'en-tête Content-type doit être défini
-    $headers = 'From: webmaster@example.com' . "\r\n" .
+    $headers = 'From: serverhugo2@gmail.com' . "\r\n" .
                'Reply-To: webmaster@example.com' . "\r\n" .
                'X-Mailer: PHP/' . phpversion();
+               "Content-type: text/html; charset=UTF-8";
 
     // Envoie l'e-mail
     echo nl2br($message); // nl2br convertit les nouvelles lignes en balises <br> pour l'affichage HTML
